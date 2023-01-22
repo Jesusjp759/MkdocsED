@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://jesusjp759.github.io/Ciclo%20de%20vida%20del%20software/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Ciclo de vida del software - Apuntes ED</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Ciclo de vida del software";
+    var mkdocs_page_input_path = "Ciclo de vida del software.md";
+    var mkdocs_page_url = "/Ciclo%20de%20vida%20del%20software/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Apuntes ED</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Ciclo de vida del software</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-define-ciclo-de-vida-del-software">1) Define "Ciclo de vida del software"</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-nombra-las-fases-principales-del-desarrollo-de-software-y-explica-brevemente-que-se-hace-en-cada-una-de-ellas">2) Nombra las fases principales del desarrollo de software y explica brevemente que se hace en cada una de ellas.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-ventajas-e-inconvenientes-del-modelo-en-cascada">3) Ventajas e inconvenientes del modelo en cascada.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-que-se-entiende-por-verificacion-y-por-validacion">4) ¿Qué se entiende por verificación? ¿Y por validación?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-explica-como-funciona-el-modelo-de-desarrollo-mediante-creacion-de-prototipos">5) Explica como funciona el modelo de desarrollo mediante creación de prototipos.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-explica-como-funciona-el-modelo-espiral-cuando-se-aplica-al-desarrollo-orientado-a-objetos">6) Explica como funciona el modelo espiral cuando se aplica al desarrollo orientado a objetos.</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Lenguajes%20de%20programaci%C3%B3n/">Lenguajes de programación</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Herramientas%20de%20desarrollo/">Herramientas de desarrollo</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Entornos%20integrados%20de%20desarrollo/">Entornos integrados de desarrollo</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Kanban%2C%20Scrum%20y%20XP/">Kanban, Scrum y XP</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Control%20de%20versiones/">Control de versiones</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Apuntes ED</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Ciclo de vida del software</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="ciclo-de-vida-del-software"><strong>CICLO DE VIDA DEL SOFTWARE</strong></h2>
+<h3 id="1-define-ciclo-de-vida-del-software">1) Define "Ciclo de vida del software"</h3>
+<p>Se define ciclo de vida del software a la estructura que contiene los procesos, las actividades y las tareas relacionadas con el desarrollo y mantenimiento de un producto software, abarcando la vida completa de dicho sistema.</p>
+<h3 id="2-nombra-las-fases-principales-del-desarrollo-de-software-y-explica-brevemente-que-se-hace-en-cada-una-de-ellas">2) Nombra las fases principales del desarrollo de software y explica brevemente que se hace en cada una de ellas.</h3>
+<p>Análisis - Se define las necesidades del cliente y se especifican los requisitos del software a desarrollar.</p>
+<p>Diseño - Se descompone y organiza el sistema en componentes que pueden ser desarrollados por separado.</p>
+<p>Codificación - Se escribe el código fuente de cada componente.</p>
+<p>Pruebas - Someter el programa al máximo número de situaciones diferentes para conseguir que el programa funcione incorrectamente y que se descubran defectos.</p>
+<p>Mantenimiento - Cambios ocasionales realizados en el sistema software.</p>
+<h3 id="3-ventajas-e-inconvenientes-del-modelo-en-cascada">3) Ventajas e inconvenientes del modelo en cascada.</h3>
+<p>Ventajas:
+Identifica las fases principales del desarrollo de software.
+El resultado de una fase es la entrada de la siguiente.
+Variedad con mayor o menor cantidad de actividades</p>
+<p>Desventajas:
+Modelo bastante rígido que se adapta mal al cambio de especificaciones.
+Puede retrasar ciertas fases ya que hay que seguir un orden indicado.</p>
+<h3 id="4-que-se-entiende-por-verificacion-y-por-validacion">4) ¿Qué se entiende por verificación? ¿Y por validación?</h3>
+<p>Verificar: Proceso para demostrar que el producto funciona correctamente.</p>
+<p>Validar: Proceso para demostrar que el sistema cumple con las funciones para las que fue diseñado.</p>
+<h3 id="5-explica-como-funciona-el-modelo-de-desarrollo-mediante-creacion-de-prototipos">5) Explica como funciona el modelo de desarrollo mediante creación de prototipos.</h3>
+<p>Durante la fase de análisis se crea un prototipo del producto para que sea probado por el usuario o cliente y se repite este paso las veces que hagan falta.</p>
+<h3 id="6-explica-como-funciona-el-modelo-espiral-cuando-se-aplica-al-desarrollo-orientado-a-objetos">6) Explica como funciona el modelo espiral cuando se aplica al desarrollo orientado a objetos.</h3>
+<p>En el modelo espiral se siguen los siguientes pasos cuando se aplica a la programación orientada a objetos:
+-Se identifican las clases candidatas.
+-Se buscan las clases en biblioteca.
+-Se extraen las clases en caso de existir.
+-Se desarrollan las clases si no existen.
+-Se añaden las nuevas clases a la biblioteca.
+-Se construye la iteración correspondiente.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Lenguajes%20de%20programaci%C3%B3n/" class="btn btn-neutral float-right" title="Lenguajes de programación">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="../Lenguajes%20de%20programaci%C3%B3n/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

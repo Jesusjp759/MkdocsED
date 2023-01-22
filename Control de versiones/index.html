@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://jesusjp759.github.io/Control%20de%20versiones/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Control de versiones - Apuntes ED</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Control de versiones";
+    var mkdocs_page_input_path = "Control de versiones.md";
+    var mkdocs_page_url = "/Control%20de%20versiones/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Apuntes ED</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ciclo%20de%20vida%20del%20software/">Ciclo de vida del software</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Lenguajes%20de%20programaci%C3%B3n/">Lenguajes de programación</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Herramientas%20de%20desarrollo/">Herramientas de desarrollo</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Entornos%20integrados%20de%20desarrollo/">Entornos integrados de desarrollo</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Kanban%2C%20Scrum%20y%20XP/">Kanban, Scrum y XP</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Control de versiones</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-ademas-de-git-que-otros-sistemas-de-control-de-versiones-existen">1) Además de Git, ¿que otros sistemas de control de versiones existen?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-en-git-que-tres-areas-existen">2) En Git, ¿qué tres áreas existen?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-busca-en-internet-un-buen-tutorial-de-git-y-realizalo-de-que-tutorial-se-trata">3) Busca en Internet un buen tutorial de GIT y realízalo. ¿De qué tutorial se trata?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-visualiza-el-siguiente-video-y-responde-a-las-cuestiones-que-aparecen-mas-abajo">4) Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-en-git-para-que-sirve-el-comando-git-config">5) En Git, ¿para qué sirve el comando git config?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-en-git-para-que-sirve-el-comando-git-init">6) En Git, ¿para qué sirve el comando git init?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-en-git-para-que-sirve-el-comando-git-clone">7) En Git, ¿para qué sirve el comando git clone?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-en-git-para-que-sirve-el-comando-git-status">8) En Git, ¿para qué sirve el comando git status?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-en-git-para-que-sirve-el-comando-git-add">9) En Git, ¿para qué sirve el comando git add?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-en-git-para-que-sirve-el-comando-git-commit">10) En Git, ¿para qué sirve el comando git commit?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-en-git-para-que-sirve-el-comando-git-log">11) En Git, ¿para qué sirve el comando git log?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-en-git-para-que-sirve-el-comando-git-reset-head-nombrearchivo">12) En Git, ¿para qué sirve el comando git reset HEAD nombrearchivo?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-en-git-para-que-sirve-el-comando-git-checkout-nombrearchivo">13) En Git, ¿para qué sirve el comando git checkout -- nombrearchivo?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-visualiza-el-siguiente-video-y-responde-a-las-cuestiones-que-aparecen-mas-abajo">14) Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-en-git-para-que-sirve-el-comando-git-branch">15) En Git, ¿para qué sirve el comando git branch?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#16-en-git-para-que-sirve-el-comando-git-checkout">16) En Git, ¿para qué sirve el comando git checkout?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17-en-git-para-que-sirve-el-comando-git-merge">17) En Git, ¿para qué sirve el comando git merge?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#18-en-git-explica-como-funciona-la-fusion-merge-de-tipo-fast-forward">18) En Git, explica cómo funciona la fusión (merge) de tipo fast-forward.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#19-en-git-explica-como-funciona-la-fusion-merge-de-tipo-3-way">19) En Git, explica cómo funciona la fusión (merge) de tipo 3-way.</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Apuntes ED</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Control de versiones</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="control-de-versiones"><strong>CONTROL DE VERSIONES</strong></h2>
+<h3 id="1-ademas-de-git-que-otros-sistemas-de-control-de-versiones-existen">1) Además de Git, ¿que otros sistemas de control de versiones existen?</h3>
+<p>Existen:
+GitHub
+BitBucket
+GitLab
+Coding -en chino-</p>
+<h3 id="2-en-git-que-tres-areas-existen">2) En Git, ¿qué tres áreas existen?</h3>
+<p>Existen el “working directory”, “staging area” y el “repository”.</p>
+<h3 id="3-busca-en-internet-un-buen-tutorial-de-git-y-realizalo-de-que-tutorial-se-trata">3) Busca en Internet un buen tutorial de GIT y realízalo. ¿De qué tutorial se trata?</h3>
+<p>https://www.w3schools.com/git/default.asp?remote=github</p>
+<h3 id="4-visualiza-el-siguiente-video-y-responde-a-las-cuestiones-que-aparecen-mas-abajo">4) Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.</h3>
+<p>https://www.youtube.com/watch?v=uR6G2v_WsRA</p>
+<h3 id="5-en-git-para-que-sirve-el-comando-git-config">5) En Git, ¿para qué sirve el comando git config?</h3>
+<p>Para definir valores de configuración de Git.</p>
+<h3 id="6-en-git-para-que-sirve-el-comando-git-init">6) En Git, ¿para qué sirve el comando git init?</h3>
+<p>Para crear un nuevo repositorio de Git.</p>
+<h3 id="7-en-git-para-que-sirve-el-comando-git-clone">7) En Git, ¿para qué sirve el comando git clone?</h3>
+<p>Para seleccionar un repositorio y clonarlo en una nueva ubicación.</p>
+<h3 id="8-en-git-para-que-sirve-el-comando-git-status">8) En Git, ¿para qué sirve el comando git status?</h3>
+<p>Para mostrar los archivos modificados del working directory, almacenados para el próximo commit.</p>
+<h3 id="9-en-git-para-que-sirve-el-comando-git-add">9) En Git, ¿para qué sirve el comando git add?</h3>
+<p>Para añadir un archivo en el estado actual al stage area.</p>
+<h3 id="10-en-git-para-que-sirve-el-comando-git-commit">10) En Git, ¿para qué sirve el comando git commit?</h3>
+<p>Envía el contenido del stage area a un nuevo commit.</p>
+<h3 id="11-en-git-para-que-sirve-el-comando-git-log">11) En Git, ¿para qué sirve el comando git log?</h3>
+<p>Muestra el historial de todos los commit de la rama actual del proyecto.</p>
+<h3 id="12-en-git-para-que-sirve-el-comando-git-reset-head-nombrearchivo">12) En Git, ¿para qué sirve el comando git reset HEAD nombrearchivo?</h3>
+<p>Sirve para sacar el archivo seleccionado del “staging area”.</p>
+<h3 id="13-en-git-para-que-sirve-el-comando-git-checkout-nombrearchivo">13) En Git, ¿para qué sirve el comando git checkout -- nombrearchivo?</h3>
+<p>Te permite restaurar archivos modificados o eliminados.</p>
+<h3 id="14-visualiza-el-siguiente-video-y-responde-a-las-cuestiones-que-aparecen-mas-abajo">14) Visualiza el siguiente video y responde a las cuestiones que aparecen más abajo.</h3>
+<p>https://www.youtube.com/watch?v=FyAAIHHClqI</p>
+<h3 id="15-en-git-para-que-sirve-el-comando-git-branch">15) En Git, ¿para qué sirve el comando git branch?</h3>
+<p>Sirve para mostrar una lista de todas tus ramas (branches).</p>
+<h3 id="16-en-git-para-que-sirve-el-comando-git-checkout">16) En Git, ¿para qué sirve el comando git checkout?</h3>
+<p>Cambia a una rama diferente y se actualizan los archivos en el working directory.</p>
+<h3 id="17-en-git-para-que-sirve-el-comando-git-merge">17) En Git, ¿para qué sirve el comando git merge?</h3>
+<p>Une la rama especificada en la rama actual.</p>
+<h3 id="18-en-git-explica-como-funciona-la-fusion-merge-de-tipo-fast-forward">18) En Git, explica cómo funciona la fusión (merge) de tipo fast-forward.</h3>
+<p>El merge es un comando que permite unificar varias ramas del proyecto, en este caso, el tipo fast-forward se refiere a la unión de la rama master de un proyecto con los cambios realizados en una rama “feature, siempre y cuando el proyecto siga un camino lineal y pertenezcan a la misma rama. Esto no funciona si las ramas se dividen y no se puede usar el tipo fast forward para unificar el commit.</p>
+<h3 id="19-en-git-explica-como-funciona-la-fusion-merge-de-tipo-3-way">19) En Git, explica cómo funciona la fusión (merge) de tipo 3-way.</h3>
+<p>El merge de tipo 3-way es una fusión de los cambios realizados en la rama master con los cambios realizados en la rama feature, siempre y cuando la rama del main sea diferente a la rama feature. Si ambas ramas que quieres unir tiene las mismas partes de los mismos archivos cambiadas se forma un conflicto, en este caso el proceso se pausaría antes del commit para poder resolver el problema.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../Kanban%2C%20Scrum%20y%20XP/" class="btn btn-neutral" title="Kanban, Scrum y XP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Kanban%2C%20Scrum%20y%20XP/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
